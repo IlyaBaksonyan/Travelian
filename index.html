@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/assets/styles/main.scss" />
+
+		<link rel="icon" href="/favicon.ico" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Rubik:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Travelian</title>
+	</head>
+
+	<body>
+		<div id="app">
+			<header class="header">
+				<div class="container">
+					<div class="header__wrapper">
+						<div class="header__logo">
+							<img src="https://i.imgur.com/IhRnNEY.png" alt="logo" />
+						</div>
+						<nav class="header__nav">
+							<a href="#">Home</a>
+							<a href="#">Explore</a>
+							<a href="#">Travel</a>
+							<a href="#">Blog</a>
+							<a href="#">Pricing</a>
+						</nav>
+						<div class="header__actions">
+							<a href="#">Login</a>
+							<a class="header__sign-up" href="#">Sign up</a>
+						</div>
+						<div class="header__burger">
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+								<path
+									d="M7.29167 14.5833C6.71637 14.5833 6.25 14.117 6.25 13.5417C6.25 12.9664 6.71637 12.5 7.29167 12.5H42.7083C43.2835 12.5 43.75 12.9664 43.75 13.5417C43.75 14.117 43.2835 14.5833 42.7083 14.5833H7.29167ZM7.29167 25C6.71637 25 6.25 24.5335 6.25 23.9583C6.25 23.3831 6.71637 22.9167 7.29167 22.9167H42.7083C43.2835 22.9167 43.75 23.3831 43.75 23.9583C43.75 24.5335 43.2835 25 42.7083 25H7.29167ZM7.29167 35.4167C6.71637 35.4167 6.25 34.9502 6.25 34.375C6.25 33.7998 6.71637 33.3333 7.29167 33.3333H42.7083C43.2835 33.3333 43.75 33.7998 43.75 34.375C43.75 34.9502 43.2835 35.4167 42.7083 35.4167H7.29167Z"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main>
+				<section class="hero">
+					<div class="container">
+						<div class="grid-wrapper">
+							<div class="hero__title">
+								<h1>Start your unforgettable journey with us.</h1>
+								<p>The best travel for your jouney begins now</p>
+							</div>
+							<div class="hero__form">
+								<div class="hero__form__wrapper">
+									<div class="hero__form-inputs">
+										<div class="hero__form-input">
+											<label for="heroInputDestination">Destination</label>
+											<input id="heroInputDestination" type="text" />
+										</div>
+										<div class="hero__form-input">
+											<label for="heroInputPerson">Person</label>
+
+											<input id="heroInputPerson" value="1" type="number" min="1" max="4" />
+										</div>
+										<div class="hero__form-input">
+											<label for="heroInputCheckIn">Check in</label>
+											<input id="heroInputCheckIn" type="date" />
+										</div>
+										<div class="hero__form-input">
+											<label for="heroInputCheckOut">check out</label>
+											<input id="heroInputCheckOut" type="date" />
+										</div>
+									</div>
+									<button class="hero__form-accept-button">
+										Book Now
+
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16">
+											<path
+												d="M21.7071 8.7071C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928931C14.9526 0.538406 14.3195 0.538407 13.9289 0.928931C13.5384 1.31946 13.5384 1.95262 13.9289 2.34314L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.7071ZM8.74228e-08 9L21 9L21 7L-8.74228e-08 7L8.74228e-08 9Z"
+												fill="white"
+											/>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hero__slider"></div>
+				</section>
+				<section class="popular">
+					<div class="container">
+						<div class="grid-wrapper">
+							<div class="popular__title">
+								<div class="popular__title__wrapper">
+									<h2>Popular Destinations</h2>
+									<hr />
+									<p>
+										Most popular destinations around the world, from historical places to natural
+										wonders.
+									</p>
+								</div>
+							</div>
+							<div class="popular__slider__buttons slider__buttons">
+								<div class="popular__slider__buttons__wrapper">
+									<button class="popular__slider__buttons-prev">
+										<svg
+											width="12"
+											height="22"
+											viewBox="0 0 12 22"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11 1L1 11L11 21"
+												stroke="white"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+									<button class="popular__slider__buttons-next">
+										<svg
+											width="12"
+											height="22"
+											viewBox="0 0 12 22"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M1 21L11 11L0.999999 1"
+												stroke="white"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="popular__slider__content">
+								<div class="popular__slider__content__wrapper">
+									<div class="popular__slider__card">
+										<div class="popular__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/d8c095810adccc54c1cae01de3a13bf58abe510e"
+											/>
+										</div>
+										<div class="popular__slider__card-text">
+											<h3 class="">Monument of Berlin</h3>
+											<div class="popular__slider__card-location">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+														fill="white"
+													/>
+													<path
+														d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+														fill="white"
+													/>
+												</svg>
+												<h4>Berlin, Germany</h4>
+											</div>
+										</div>
+									</div>
+									<div class="popular__slider__card">
+										<div class="popular__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/8b6ca60657afa880580875c7a29e7ffc92950e01"
+											/>
+										</div>
+										<div class="popular__slider__card-text">
+											<h3 class="">Millennium Bridge</h3>
+											<div class="popular__slider__card-location">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+														fill="white"
+													/>
+													<path
+														d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+														fill="white"
+													/>
+												</svg>
+												<h4>London, United Kingdom</h4>
+											</div>
+										</div>
+									</div>
+									<div class="popular__slider__card">
+										<div class="popular__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/153685d6d4f6820b1e9764100a62337277117114"
+											/>
+										</div>
+										<div class="popular__slider__card-text">
+											<h3 class="">Rialto Bridge</h3>
+											<div class="popular__slider__card-location">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+														fill="white"
+													/>
+													<path
+														d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+														fill="white"
+													/>
+												</svg>
+												<h4>Venice, Italy</h4>
+											</div>
+										</div>
+									</div>
+									<div class="popular__slider__card">
+										<div class="popular__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/6fc88ed3ed530747d1fcd6fa25ce5e5c32d65fc1"
+											/>
+										</div>
+										<div class="popular__slider__card-text">
+											<h3>Sea of Orange Tiles</h3>
+											<div class="popular__slider__card-location">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+														fill="white"
+													/>
+													<path
+														d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+														fill="white"
+													/>
+												</svg>
+												<h4>Lisbon, Portugal</h4>
+											</div>
+										</div>
+									</div>
+									<div class="popular__slider__card">
+										<div class="popular__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://s3-alpha-sig.figma.com/img/4459/b16d/92fe37f01fbd24ba59e39ee98303f766?Expires=1690761600&Signature=Smak1XsMHyhxDuc33~5plVr3L~ZqHqTAMgL8c1WQ0NwDRppeRvnjeMy55OWxnlRMIeW8ju5-W1cRFhsEfjaOSfWCiyQQoFT0X-C3-oUZ1zZOqThyOinokhJEyKDgF64tfmUa-7ESgC1Ee3j6iSgXrGf0u9f8-EYBHIjHUdjtfcVB1uzZfKU9JYs5k4ZjeA6xgu0~t471RrrFDoJm6U6m4eSJQ1Pp7lV5gfz2HBc3dANKoEE82dmTOoQEnzHrlKkV~1OM9V1LS32Kc~YfLVflWqPY7E1bi4Pn8ljfhZNaDycnapnvBJlPf0ndAcNlls7kTndRXEQSGPLFvk0UwDFh6A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+											/>
+										</div>
+										<div class="popular__slider__card-text">
+											<h3 class="">Monument of Berlin</h3>
+											<div class="popular__slider__card-location">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+														fill="white"
+													/>
+													<path
+														d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+														fill="white"
+													/>
+												</svg>
+												<h4>Berlin, Germany</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="special">
+					<div class="container">
+						<div class="grid-wrapper">
+							<div class="special__title">
+								<div class="special__title__wrapper">
+									<h2>Special Offer</h2>
+									<hr />
+									<p>
+										Most popular destinations around the world, from historical places to natural
+										wonders.
+									</p>
+								</div>
+							</div>
+							<div class="special__slider__buttons slider__buttons">
+								<div class="special__slider__buttons__wrapper">
+									<button class="special__slider__buttons-prev">
+										<svg
+											width="12"
+											height="22"
+											viewBox="0 0 12 22"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11 1L1 11L11 21"
+												stroke="white"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+									<button class="special__slider__buttons-next">
+										<svg
+											width="12"
+											height="22"
+											viewBox="0 0 12 22"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M1 21L11 11L0.999999 1"
+												stroke="white"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="special__slider__content">
+								<div class="special__slider__content__wrapper">
+									<div class="special__slider__card">
+										<div class="special__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/d338ff7ab02dcffea5b66cdb8118e931ce15dc61"
+												alt="Lisbon, Portugal"
+											/>
+										</div>
+										<div class="special__slider__card-content">
+											<div class="special__slider__card-title">
+												<h3>Lisbon, Portugal</h3>
+											</div>
+											<div class="special__slider__card-rating">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+											</div>
+											<div class="special__slider__card-text">
+												<p>
+													5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+													popular during the renaissance. Passage and going through the cites of the
+													world in classical literature.
+												</p>
+											</div>
+											<div class="special__slider__card-price">
+												<p>from <span>€500</span></p>
+											</div>
+											<button class="special__slider__card-button">Details</button>
+										</div>
+									</div>
+									<div class="special__slider__card">
+										<div class="special__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/63d7ad6210fe0b98b1441fbc0dd023e053637022"
+												alt="Athens, Greece"
+											/>
+										</div>
+										<div class="special__slider__card-content">
+											<div class="special__slider__card-title">
+												<h3>Athens, Greece</h3>
+											</div>
+											<div class="special__slider__card-rating">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+											</div>
+											<div class="special__slider__card-text">
+												<p>
+													Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus omnis hic
+													molestiae amet tempore, earum sunt officiis incidunt voluptatibus sint.
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptas.
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+													reprehenderit!
+												</p>
+											</div>
+											<div class="special__slider__card-price">
+												<p>from <span>€800</span></p>
+											</div>
+											<button class="special__slider__card-button">Details</button>
+										</div>
+									</div>
+									<div class="special__slider__card">
+										<div class="special__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/d338ff7ab02dcffea5b66cdb8118e931ce15dc61"
+												alt="Lisbon, Portugal"
+											/>
+										</div>
+										<div class="special__slider__card-content">
+											<div class="special__slider__card-title">
+												<h3>Rome, Italy</h3>
+											</div>
+											<div class="special__slider__card-rating">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+											</div>
+											<div class="special__slider__card-text">
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi
+													vitae dolor non tempora? Similique nesciunt illum impedit modi facilis
+													harum animi quaerat reprehenderit doloribus natus placeat dolore quam sed,
+													beatae doloremque voluptates commodi temporibus quasi voluptate fuga
+													voluptatibus numquam.
+												</p>
+											</div>
+											<div class="special__slider__card-price">
+												<p>from <span>€750</span></p>
+											</div>
+											<button class="special__slider__card-button">Details</button>
+										</div>
+									</div>
+									<div class="special__slider__card">
+										<div class="special__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/d338ff7ab02dcffea5b66cdb8118e931ce15dc61"
+												alt="Lisbon, Portugal"
+											/>
+										</div>
+										<div class="special__slider__card-content">
+											<div class="special__slider__card-title">
+												<h3>Lisbon, Portugal</h3>
+											</div>
+											<div class="special__slider__card-rating">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+														fill="#FFC107"
+													/>
+												</svg>
+											</div>
+											<div class="special__slider__card-text">
+												<p>
+													5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+													popular during the renaissance. Passage and going through the cites of the
+													world in classical literature.
+												</p>
+											</div>
+											<div class="special__slider__card-price">
+												<p>from <span>€500</span></p>
+											</div>
+											<button class="special__slider__card-button">Details</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="blog">
+					<div class="container">
+						<div class="grid-wrapper">
+							<div class="blog__title">
+								<div class="blog__title__wrapper">
+									<h2>Our Blog</h2>
+									<hr />
+									<p>
+										Most popular destinations around the world, from historical places to natural
+										wonders.
+									</p>
+								</div>
+							</div>
+							<div class="blog__content">
+								<div class="blog__content__wrapper">
+									<div class="blog__image-block">
+										<img
+											loading="lazy"
+											src="https://s3-alpha-sig.figma.com/img/d8c0/9581/0adccc54c1cae01de3a13bf58abe510e?Expires=1690761600&Signature=OcscFZRek0mVrbbmxruT~BGKqOUnIsGcUUSiunTrhquzf50ZulSqqeCYCyigGcadtvUDLsaxlwcf9cw9qTgltQ2NgVEu4xYDd6OZE2gv7~2CU3HCLHOaXgsnUgqV47pGx5Glu-RGPocJvmfkcletqHqpfWpxNb0JQMeOkLko5Jqid~r1sx7Jn9r5Gnt53b-9hYbRZ1d0wGJAVeGSJ9BTfeOKN39xmxbcaHKSnkY4Eigdh5uqSwMUgEogEiIAbhu8jzabxWbZxxgc3Av61SIhENbIgeW5VObQkyceb0YfbtelgG9QQYd7HHuHgfQwnT7-YtwGfXSQWAoRNLoHa31Usw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+											alt="Beautiful Italy"
+										/>
+									</div>
+									<div class="blog__text-block">
+										<div class="blog__text-block__wrapper">
+											<div class="blog__text-block__title">
+												<h3>Beautiful Italy Let’s travel</h3>
+											</div>
+											<div class="blog__text-block__text">
+												<p>
+													But I must explain to you how all this mistaken idea of denouncing
+													pleasure and praising pain was born and I will give you a complete account
+													of the system and expound the actual teachings of the great explorer of
+													the truth, the master- builder of human happiness. No one rejects,
+													dislike, or avoids plasure itself, because it is pleasure, but because
+													those who do not know how to pursue pleasure rationally encounter
+													consequences that are extremly painful. Nor again is there anyone who
+													loves or pursues.
+												</p>
+											</div>
+											<div class="blog__text-block__read-more">
+												<a href="">
+													Read More
+													<svg viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M27.7071 8.7071C28.0976 8.31658 28.0976 7.68342 27.7071 7.29289L21.3431 0.92893C20.9526 0.538406 20.3195 0.538406 19.9289 0.92893C19.5384 1.31945 19.5384 1.95262 19.9289 2.34314L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.7071ZM8.74228e-08 9L27 9L27 7L-8.74228e-08 7L8.74228e-08 9Z"
+															fill="#FF7757"
+														/>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="planning">
+					<div class="container">
+						<div class="grid-wrapper">
+							<div class="planning__title">
+								<div class="planning__title__wrapper">
+									<h2>Trip Planners</h2>
+									<hr />
+									<p class="planning__title__description">
+										20 years from now you will be more disappointed by the things that you didn’t
+										do. Stop regretting and start travelling, start throwing off the bowlines.
+									</p>
+
+									<div class="planning__button">
+										<a href="">View all trip plans</a>
+									</div>
+								</div>
+							</div>
+							<div class="planning__content">
+								<div class="planning__content__wrapper">
+									<div class="planning__card">
+										<div class="planning__card-image">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/d11a104500271e508d5e4defb10ccff26de62622"
+												alt=""
+											/>
+										</div>
+										<div class="planning__card-heading">
+											<div class="planning__card-purpose">
+												<h4></h4>
+											</div>
+											<div class="planning__card-price">
+												<p></p>
+											</div>
+											<div class="planning__card-title">
+												<h3></h3>
+											</div>
+											<div class="planning__card-rating"></div>
+											<div class="planning__card-duration">
+												<p></p>
+											</div>
+										</div>
+									</div>
+									<div class="planning__card open">
+										<div class="planning__card-image">
+											<img
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/ae9eee5a82b935692e705ac15316b88500e4d56c"
+												alt=""
+											/>
+										</div>
+										<div class="planning__card-heading">
+											<div class="planning__card-purpose">
+												<h4>Guided Tour</h4>
+											</div>
+											<div class="planning__card-price">
+												<p>€95/Day</p>
+											</div>
+											<div class="planning__card-title">
+												<h3>Paris City Tour</h3>
+											</div>
+											<div class="planning__card-rating">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+														fill="#FFC107"
+													/>
+												</svg>
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+														fill="#FFC107"
+													/>
+												</svg>
+											</div>
+											<div class="planning__card-duration">
+												<p>7 Days tour</p>
+											</div>
+										</div>
+									</div>
+									<div class="planning__card">
+										<div class="planning__card-image">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/d11a104500271e508d5e4defb10ccff26de62622"
+												alt=""
+											/>
+										</div>
+										<div class="planning__card-heading">
+											<div class="planning__card-purpose">
+												<h4></h4>
+											</div>
+											<div class="planning__card-price">
+												<p></p>
+											</div>
+											<div class="planning__card-title">
+												<h3></h3>
+											</div>
+											<div class="planning__card-rating"></div>
+											<div class="planning__card-duration">
+												<p></p>
+											</div>
+										</div>
+									</div>
+									<div class="planning__card">
+										<div class="planning__card-image">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/d11a104500271e508d5e4defb10ccff26de62622"
+												alt=""
+											/>
+										</div>
+										<div class="planning__card-heading">
+											<div class="planning__card-purpose">
+												<h4></h4>
+											</div>
+											<div class="planning__card-price">
+												<p></p>
+											</div>
+											<div class="planning__card-title">
+												<h3></h3>
+											</div>
+											<div class="planning__card-rating"></div>
+											<div class="planning__card-duration">
+												<p></p>
+											</div>
+										</div>
+									</div>
+									<div class="planning__card">
+										<div class="planning__card-image">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/d11a104500271e508d5e4defb10ccff26de62622"
+												alt=""
+											/>
+										</div>
+										<div class="planning__card-heading">
+											<div class="planning__card-purpose">
+												<h4></h4>
+											</div>
+											<div class="planning__card-price">
+												<p></p>
+											</div>
+											<div class="planning__card-title">
+												<h3></h3>
+											</div>
+											<div class="planning__card-rating"></div>
+											<div class="planning__card-duration">
+												<p></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="gallery">
+					<div class="container">
+						<div class="grid-wrapper">
+							<div class="gallery__title">
+								<div class="gallery__title__wrapper">
+									<h2>Destination Gallery</h2>
+									<hr />
+									<p>Our photo gallery on trip</p>
+								</div>
+							</div>
+							<div class="gallery__slider__buttons slider__buttons">
+								<div class="gallery__slider__buttons__wrapper">
+									<button class="gallery__slider__buttons-prev">
+										<svg
+											width="12"
+											height="22"
+											viewBox="0 0 12 22"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11 1L1 11L11 21"
+												stroke="white"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+									<button class="gallery__slider__buttons-next">
+										<svg
+											width="12"
+											height="22"
+											viewBox="0 0 12 22"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M1 21L11 11L0.999999 1"
+												stroke="white"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="gallery__slider__content">
+								<div class="gallery__slider__content__wrapper">
+									<div class="gallery__slider__card">
+										<div class="gallery__slider__card-img">
+											<img
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/edb3e691ca3c20163cc6d6a165df950e857fb993"
+												alt=""
+											/>
+										</div>
+									</div>
+									<div class="gallery__slider__card">
+										<div class="gallery__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/31693dd68a5d0f488a165c9b801d4a008d9dbcf8"
+												alt=""
+											/>
+										</div>
+									</div>
+									<div class="gallery__slider__card">
+										<div class="gallery__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/980997d09ae80156ff64bb4e6cf358b5c306c77f"
+												alt=""
+											/>
+										</div>
+									</div>
+									<div class="gallery__slider__card">
+										<div class="gallery__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/b795bbd1247b14266e37a88bb025d65103b93ab0"
+												alt=""
+											/>
+										</div>
+									</div>
+									<div class="gallery__slider__card">
+										<div class="gallery__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/edb3e691ca3c20163cc6d6a165df950e857fb993"
+												alt=""
+											/>
+										</div>
+									</div>
+									<div class="gallery__slider__card">
+										<div class="gallery__slider__card-img">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/edb3e691ca3c20163cc6d6a165df950e857fb993"
+												alt=""
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="expiriences">
+					<div class="container">
+						<div class="grid-wrapper">
+							<div class="expiriences__title">
+								<div class="expiriences__title__wrapper">
+									<h2>Traveler’s Experiences</h2>
+									<hr />
+									<p>Here some awesome feedback from our travelers</p>
+								</div>
+							</div>
+							<div class="expiriences__slider__content">
+								<div class="expiriences__slider__content__wrapper">
+									<div class="expiriences__slider__card">
+										<div class="expiriences__slider__card-avatar">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/5824acacb3b76175bc84084ec18597109498f96d"
+												alt="John doe"
+											/>
+										</div>
+										<div class="expiriences__slider__card-description">
+											<p>
+												But I must explain to you how all this mistaken idea of denouncing pleasure
+												and praising pain was born and I will give you a complete account of the
+												system and expound the actual teachings of the great explorer of the truth,
+												the master- builder of human happiness.
+											</p>
+										</div>
+										<div class="expiriences__slider__card-rating">
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+										</div>
+										<div class="expiriences__slider__card-name">
+											<h3>John Doe</h3>
+										</div>
+										<div class="expiriences__slider__card-job">
+											<h4>Accountant</h4>
+										</div>
+									</div>
+									<div class="expiriences__slider__card">
+										<div class="expiriences__slider__card-avatar">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/13d1f8e83dbc0f34bfd2aed999007fa6b98dad04"
+												alt="John doe"
+											/>
+										</div>
+										<div class="expiriences__slider__card-description">
+											<p>
+												But I must explain to you how all this mistaken idea of denouncing pleasure
+												and praising pain was born and I will give you a complete account of the
+												system and expound the actual teachings of the great explorer of the truth,
+												the master- builder of human happiness.
+											</p>
+										</div>
+										<div class="expiriences__slider__card-rating">
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+										</div>
+										<div class="expiriences__slider__card-name">
+											<h3>John Smith</h3>
+										</div>
+										<div class="expiriences__slider__card-job">
+											<h4>Journalist, HWO News</h4>
+										</div>
+									</div>
+									<div class="expiriences__slider__card">
+										<div class="expiriences__slider__card-avatar">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/3e7e13469f9936fa68f41c17b224a071bea60ef2"
+												alt="John doe"
+											/>
+										</div>
+										<div class="expiriences__slider__card-description">
+											<p>
+												But I must explain to you how all this mistaken idea of denouncing pleasure
+												and praising pain was born and I will give you a complete account of the
+												system and expound the actual teachings of the great explorer of the truth,
+												the master- builder of human happiness.
+											</p>
+										</div>
+										<div class="expiriences__slider__card-rating">
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/></svg
+											><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/></svg
+											><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/></svg
+											><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+										</div>
+										<div class="expiriences__slider__card-name">
+											<h3>Tamara Bellis</h3>
+										</div>
+										<div class="expiriences__slider__card-job">
+											<h4>Managing Director, JTH</h4>
+										</div>
+									</div>
+									<div class="expiriences__slider__card">
+										<div class="expiriences__slider__card-avatar">
+											<img
+												loading="lazy"
+												src="https://www.figma.com/file/mIY9fjmtX26ur0msC9G33T/image/5824acacb3b76175bc84084ec18597109498f96d"
+												alt="John doe"
+											/>
+										</div>
+										<div class="expiriences__slider__card-description">
+											<p>
+												But I must explain to you how all this mistaken idea of denouncing pleasure
+												and praising pain was born and I will give you a complete account of the
+												system and expound the actual teachings of the great explorer of the truth,
+												the master- builder of human happiness.
+											</p>
+										</div>
+										<div class="expiriences__slider__card-rating">
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/></svg
+											><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/></svg
+											><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/></svg
+											><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/></svg
+											><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12 2.00006L15.09 8.26006L22 9.27006L17 14.1401L18.18 21.0201L12 17.7701L5.82 21.0201L7 14.1401L2 9.27006L8.91 8.26006L12 2.00006Z"
+													fill="#FFC107"
+												/>
+											</svg>
+										</div>
+										<div class="expiriences__slider__card-name">
+											<h3>John Doe</h3>
+										</div>
+										<div class="expiriences__slider__card-job">
+											<h4>Accountant</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="expiriences__slider__buttons slider__buttons">
+								<div class="expiriences__slider__buttons__wrapper">
+									<button class="expiriences__slider__buttons-prev">
+										<svg viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M11 1L1 11L11 21"
+												stroke="white"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+									<button class="expiriences__slider__buttons-next">
+										<svg viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1 21L11 11L0.999999 1"
+												stroke="white"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="footer__logo">
+							<img loading="lazy" src="https://i.imgur.com/IhRnNEY.png" alt="logo" />
+							<p>Copyright © Travellian 2020 All rights reserved</p>
+						</div>
+						<div class="footer__content">
+							<div class="footer__info">
+								<h3>Menu</h3>
+								<p>Home</p>
+								<p>Explore</p>
+								<p>Travel</p>
+								<p>Blog</p>
+								<p>Pricing</p>
+							</div>
+							<div class="footer__info">
+								<h3>Information</h3>
+								<a href="">Destinations</a>
+								<a href="">Supports</a>
+								<a href="">Terms & Conditions</a>
+								<a href="">Privacy</a>
+							</div>
+							<div class="footer__info">
+								<h3>Contact Info</h3>
+								<a href="tel:+12345678910">+123 456 789</a>
+								<a href="info@travellian.com">info@travellian.com</a>
+								<p>1245, New Yourk, USA</p>
+							</div>
+						</div>
+						<div class="footer__messengers">
+							<h3>Follow us on</h3>
+							<div class="footer__messengers-icons">
+								<a href="">
+									<img loading="lazy" src="https://i.imgur.com/YFOeAyt.png" alt="" />
+								</a>
+								<a href="">
+									<img loading="lazy" src="https://i.imgur.com/gx8dyJH.png" alt="" />
+								</a>
+								<a href="">
+									<img loading="lazy" src="https://i.imgur.com/RBYOeaW.png" alt="" />
+								</a>
+								<a href="">
+									<img loading="lazy" src="https://i.imgur.com/FeCBNqj.png" alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
